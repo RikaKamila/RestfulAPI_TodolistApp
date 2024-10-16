@@ -26,11 +26,11 @@ getTodosById: (req, res) => {
         })
         .catch(err => {
             console.error(err);
-            res.json({ message: 'Terjadi kesalahan saat mengambil Todo' });
+            res.json({ message: 'Error when get todo' });
         });
 
 },
-// Add Todos
+// Add Todo
 addTodos: (req, res) => {
     const data = req.body;
 
@@ -42,8 +42,43 @@ addTodos: (req, res) => {
     });
   },
 // Edit Todos
-editTodosById: (req, res) => {},
+editTodosById: (req, res) => {
+    const id = req.params.id;
+
+    Todos.findByIdAndUpdate(id, req.body, {new: true})
+    .then(todo => {
+        if (!todo) {
+            return res.json({ message: 'Todo not found' });
+        }
+        res.json({
+            message: "Edit Todo By Id Success",
+            data: todo
+        });
+    })
+    .catch(err => {
+        console.error(err);
+        res.json({ message: 'Error when edit Todo' });
+    });
+
+},
 // Delete Todos
-deleteTodosById: (req, res) => {},
+deleteTodosById: (req, res) => {
+    const id = req.params.id;
+
+    Todos.findByIdAndDelete(id)
+    .then(todo => {
+      if (!todo) {
+          return res.json({ message: 'Todo Not Found' });
+      }
+      res.json({
+          message: "Delete Todo Success",
+          data: todo
+      });
+  })
+  .catch(err => {
+      console.error(err);
+      res.json({ message: 'Error when Delete Todo' });
+  });
+},
 
 }
