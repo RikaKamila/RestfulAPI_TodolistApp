@@ -10,6 +10,8 @@ getAllTodos: async (req, res) => {
       data,
     });
 },
+
+
 // Get Todos By Id
 getTodosById: (req, res) => {
     const id = req.params.id;
@@ -79,6 +81,21 @@ deleteTodosById: (req, res) => {
       console.error(err);
       res.json({ message: 'Error when Delete Todo' });
   });
+},
+
+// Delete All todos
+deleteTodos: async (req, res) => {
+    try {
+        const result = await Todos.deleteMany({});
+        res.json({
+            message: 'All Todos Deleted',
+            deletedCount: result.deletedCount
+        });
+
+    } catch (err) {
+        console.error(err);
+        res.json({ message: 'Error Deleting Todos' });
+    }
 },
 
 }
