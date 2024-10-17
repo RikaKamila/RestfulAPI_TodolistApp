@@ -66,7 +66,7 @@ Request Body:
 
 ## TODO List
 
-#* See All Todos
+* GET All Todos
   
 GET /todos
 
@@ -81,7 +81,7 @@ Request Body:
   }
 ```
 
-* See TodoById
+* GET TodoById
   
 GET /todos/{id}
 
