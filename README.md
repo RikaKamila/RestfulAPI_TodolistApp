@@ -18,7 +18,7 @@ The API will be running at:   http://localhost:3001/todos
 
 # Endpoint
 ## Authentication
-## User Registration
+### User Registration
 POST /auth/regis
 Request Body: 
   { 
@@ -29,7 +29,7 @@ Request Body:
     "email":"String" 
   }
 
-## User Login
+### User Login
 POST /auth/login
 Request Body: 
   { 
@@ -37,7 +37,7 @@ Request Body:
     "password": "string", 
   }
 
-# ToDoList
+## TODO List
 * See All Todos
 GET /todos
 Request Body:
