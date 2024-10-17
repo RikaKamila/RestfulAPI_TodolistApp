@@ -83,19 +83,14 @@ deleteTodosById: (req, res) => {
   });
 },
 
-// Delete All todos
-deleteTodos: async (req, res) => {
-    try {
-        const result = await Todos.deleteMany({});
-        res.json({
-            message: 'All Todos Deleted',
-            deletedCount: result.deletedCount
-        });
 
-    } catch (err) {
-        console.error(err);
-        res.json({ message: 'Error Deleting Todos' });
-    }
-},
+// Delete All todos
+deleteAllTodos: async (req, res) => {
+    await Todo.deleteMany({});
+
+    res.json({
+      message: "All todos clear",
+    });
+  },
 
 }
