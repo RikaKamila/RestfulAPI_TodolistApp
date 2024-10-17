@@ -8,11 +8,14 @@ A RESTful API Todo List built with Node.js and Express.js offers user authentica
 Make sure you have Node.js and npm installed on your system. You also need to install Express.js as framework backend, MongoDB as database and Mongoose as ODM.
 ## Steps your local machine
 1. Clone the Repository
+   
 Clone the project to your local machine:
+```
 https://github.com/RikaKamila/RestfulAPI_TodolistApp.git
-2. Install Dependencies
+```
+3. Install Dependencies
     npm install
-3. Run the Application
+4. Run the Application
      npm start
 5. Access API
 The API will be running at:   http://localhost:3001/todos
