@@ -39,7 +39,7 @@ Make sure you have Node.js and npm installed on your system. You also need to in
 
 POST /auth/regis
 
-Request Body: 
+Request Body : 
 
 ```
   { 
@@ -55,7 +55,7 @@ Request Body:
 
 POST /auth/login
 
-Request Body: 
+Request Body : 
 
 ```
   { 
@@ -70,7 +70,7 @@ Request Body:
   
 GET /todos
 
-Request Body:
+Request Body :
 
 ```
   {
@@ -113,6 +113,8 @@ POST /todos
   
 PUT /todos/{id}
 
+Request Body :
+
 ```
   {
     "task": "String",
@@ -125,6 +127,8 @@ PUT /todos/{id}
 * Delete TodoById
   
 DELETE /todos/{id}
+
+Request Body :
 
 ```
   {
@@ -139,6 +143,8 @@ DELETE /todos/{id}
   
 DELETE /todos
 
+Request Body :
+ 
 ```
   {
     "task": "String",
