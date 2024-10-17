@@ -3,6 +3,7 @@
 A RESTful API Todo List built with Node.js and Express.js offers user authentication (login and registration).
 
 # Installation and Setup
+
 ## Getting Started
 Make sure you have Node.js and npm installed on your system. You also need to install Express.js as framework backend, MongoDB as database and Mongoose as ODM.
 ## Steps your local machine
@@ -17,13 +18,15 @@ https://github.com/RikaKamila/RestfulAPI_TodolistApp.git
 The API will be running at:   http://localhost:3001/todos
 
 # Endpoint
+
 ## Authentication
+
 ### User Registration
 POST /auth/regis
 Request Body: 
   { 
-    "username": "string", 
-    "password": "string", 
+    "username": "String", 
+    "password": "String", 
     "name": "string", 
     "age": "Number", 
     "email":"String" 
@@ -33,8 +36,8 @@ Request Body:
 POST /auth/login
 Request Body: 
   { 
-    "username": "string", 
-    "password": "string", 
+    "username": "String", 
+    "password": "String", 
   }
 
 ## TODO List
@@ -45,7 +48,7 @@ Request Body:
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
-    "priority: String"
+    "priority": "String"
   }
 
 * See TodoById
@@ -55,7 +58,7 @@ Request Body :
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
-    "priority: String"
+    "priority": "String"
   }
 
 * Add Todo
@@ -64,7 +67,7 @@ POST /todos
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
-    "priority: String"
+    "priority": "String"
   }
 
 * Edit TodoById
@@ -73,7 +76,7 @@ PUT /todos/{id}
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
-    "priority: String"
+    "priority": "String"
   }
 
 
@@ -83,7 +86,7 @@ DELETE /todos/{id}
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
-    "priority: String"
+    "priority": "String"
   }
 
 * Delete AllTodos
@@ -92,10 +95,10 @@ DELETE /todos
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
-    "priority: String"
+    "priority": "String"
   }
 
-# Testing
+## Testing
 Using Postman for Testing Endpoint
 
 
