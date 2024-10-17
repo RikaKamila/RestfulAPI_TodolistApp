@@ -14,19 +14,30 @@ Clone the project to your local machine:
 https://github.com/RikaKamila/RestfulAPI_TodolistApp.git
 ```
 3. Install Dependencies
+   ```
     npm install
-4. Run the Application
+   ```
+5. Run the Application
+   ```
      npm start
-5. Access API
-The API will be running at:   http://localhost:3001/todos
+   ```
+7. Access API
+   
+The API will be running at:
+```
+http://localhost:3001/todos
+```
 
 # Endpoint
 
 ## Authentication
 
 ### User Registration
+
 POST /auth/regis
+
 Request Body: 
+```
   { 
     "username": "String", 
     "password": "String", 
@@ -34,6 +45,7 @@ Request Body:
     "age": "Number", 
     "email":"String" 
   }
+```
 
 ### User Login
 POST /auth/login
