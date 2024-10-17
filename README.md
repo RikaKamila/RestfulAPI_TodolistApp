@@ -9,24 +9,27 @@ Make sure you have Node.js and npm installed on your system. You also need to in
 ## Steps your local machine
 1. Clone the Repository
    
-Clone the project to your local machine:
-```
-https://github.com/RikaKamila/RestfulAPI_TodolistApp.git
-```
+   ```
+   https://github.com/RikaKamila/RestfulAPI_TodolistApp.git
+   ```
+   
 3. Install Dependencies
+   
    ```
     npm install
    ```
+   
 5. Run the Application
+   
    ```
      npm start
    ```
-7. Access API
    
-The API will be running at:
-```
-http://localhost:3001/todos
-```
+7. Access API
+
+   ```
+   http://localhost:3001/todos
+   ```
 
 # Endpoint
 
@@ -37,6 +40,7 @@ http://localhost:3001/todos
 POST /auth/regis
 
 Request Body: 
+
 ```
   { 
     "username": "String", 
@@ -48,72 +52,104 @@ Request Body:
 ```
 
 ### User Login
+
 POST /auth/login
+
 Request Body: 
+
+```
   { 
     "username": "String", 
     "password": "String", 
   }
+```
 
 ## TODO List
+
 * See All Todos
+  
 GET /todos
+
 Request Body:
+
+```
   {
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
     "priority": "String"
   }
+```
 
 * See TodoById
+  
 GET /todos/{id}
+
 Request Body :
+
+```
   {
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
     "priority": "String"
   }
+```
 
 * Add Todo
+  
 POST /todos
+
+```
   {
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
     "priority": "String"
   }
+```
 
 * Edit TodoById
+  
 PUT /todos/{id}
+
+```
   {
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
     "priority": "String"
   }
-
+```
 
 * Delete TodoById
+  
 DELETE /todos/{id}
+
+```
   {
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
     "priority": "String"
   }
+```
 
 * Delete AllTodos
+  
 DELETE /todos
+
+```
   {
     "task": "String",
     "completed": "Boolean",
     "dueDate": "String",
     "priority": "String"
   }
+```
 
 ## Testing
+
 Using Postman for Testing Endpoint
 
 
