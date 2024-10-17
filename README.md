@@ -66,7 +66,7 @@ Request Body:
 
 ## TODO List
 
-* See All Todos
+#* See All Todos
   
 GET /todos
 
