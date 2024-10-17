@@ -17,8 +17,7 @@ https://github.com/RikaKamila/RestfulAPI_TodolistApp.git
 The API will be running at:   http://localhost:3001/todos
 
 # Endpoint
-
-# Authentication
+## Authentication
 ## User Registration
 POST /auth/regis
 Request Body: 
@@ -39,7 +38,6 @@ Request Body:
   }
 
 # ToDoList
-
 * See All Todos
 GET /todos
 Request Body:
